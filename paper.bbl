@@ -1,0 +1,153 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{castillo2019comparative}
+Castillo, O., Valdez, F., Soria, J., Amador-Angulo, L., Ochoa, P., Peraza, C.:
+  Comparative study in fuzzy controller optimization using bee colony,
+  differential evolution, and harmony search algorithms. Algorithms  12(1), ~9
+  (2019)
+
+\bibitem{valdez2021swarm}
+Valdez, F.: Swarm intelligence: A review of optimization algorithms based on
+  animal behavior. Recent Advances of Hybrid Intelligent Systems Based on Soft
+  Computing pp. 273--298 (2021)
+
+\bibitem{acherjee2020ultrasonic}
+Acherjee, B., Maity, D., Kuar, A.S.: Ultrasonic machining process optimization
+  by cuckoo search and chicken swarm optimization algorithms. International
+  Journal of Applied Metaheuristic Computing (IJAMC)  11(2),  1--26 (2020)
+
+\bibitem{ontiveros2018high}
+Ontiveros, E., Melin, P., Castillo, O.: High order $\alpha$-planes integration:
+  a new approach to computational cost reduction of general type-2 fuzzy
+  systems. Engineering Applications of Artificial Intelligence  74,  186--197
+  (2018)
+
+\bibitem{thain2005distributed}
+Thain, D., Tannenbaum, T., Livny, M.: Distributed computing in practice: the
+  condor experience. Concurrency and computation: practice and experience
+  17(2-4),  323--356 (2005)
+
+\bibitem{garcia2013there}
+Garc{\'\i}a-Valdez, M., Mancilla, A., Trujillo, L., Merelo, J.J.,
+  Fern{\'a}ndez-de Vega, F.: Is there a free lunch for cloud-based evolutionary
+  algorithms? In: 2013 IEEE Congress on Evolutionary Computation. pp.
+  1255--1262. IEEE (2013)
+
+\bibitem{eshratifar2019bottlenet}
+Eshratifar, A.E., Esmaili, A., Pedram, M.: Bottlenet: A deep learning
+  architecture for intelligent mobile cloud computing services. In: 2019
+  IEEE/ACM International Symposium on Low Power Electronics and Design
+  (ISLPED). pp. 1--6. IEEE (2019)
+
+\bibitem{porto2018evolutionary}
+Porto, V.W.: Evolutionary programming. In: Evolutionary Computation 1, pp.
+  127--140. CRC Press (2018)
+
+\bibitem{back1996evolutionary}
+Back, T.: Evolutionary algorithms in theory and practice: evolution strategies,
+  evolutionary programming, genetic algorithms. Oxford university press (1996)
+
+\bibitem{valdez2021container}
+Valdez, M.G., Guerv{\'o}s, J.J.M.: A container-based cloud-native architecture
+  for the reproducible execution of multi-population optimization algorithms.
+  Future Generation Computer Systems  116,  234--252 (2021)
+
+\bibitem{garcia2015evospace}
+Garc{\'\i}a-Valdez, M., Trujillo, L., Merelo, J.J., de~Vega, F.F., Olague, G.:
+  The evospace model for pool-based evolutionary algorithms. Journal of Grid
+  Computing  13(3),  329--349 (2015)
+
+\bibitem{merelo2016nodio}
+Merelo, J.J., Garc{\'\i}a-Valdez, M., Castillo, P.A., Garc{\'\i}a-S{\'a}nchez,
+  P., Cuevas, P., Rico, N.: Nodio, a javascript framework for volunteer-based
+  evolutionary algorithms: first results. arXiv preprint arXiv:1601.01607
+  (2016)
+
+\bibitem{armbrust2010view}
+Armbrust, M., Fox, A., Griffith, R., Joseph, A.D., Katz, R., Konwinski, A.,
+  Lee, G., Patterson, D., Rabkin, A., Stoica, I., et~al.: A view of cloud
+  computing. Communications of the ACM  53(4),  50--58 (2010)
+
+\bibitem{Felix-Saul2022}
+Felix-Saul, J.C., Valdez, M.G., Guerv{\'o}s, J.J.M.: A Novel Distributed
+  Nature-Inspired Algorithm for Solving Optimization Problems, pp. 107--119.
+  Springer International Publishing, Cham (2022)
+
+\bibitem{hellwig2020modified}
+Hellwig, M., Beyer, H.G.: A modified matrix adaptation evolution strategy with
+  restarts for constrained real-world problems. In: 2020 IEEE Congress on
+  Evolutionary Computation (CEC). pp. 1--8. IEEE (2020)
+
+\bibitem{loshchilov2013cma}
+Loshchilov, I.: Cma-es with restarts for solving cec 2013 benchmark problems.
+  In: 2013 IEEE Congress on Evolutionary Computation. pp. 369--376. Ieee (2013)
+
+\bibitem{jansen2010aging}
+Jansen, T., Zarges, C.: Aging beyond restarts. In: Proceedings of the 12th
+  annual conference on Genetic and evolutionary computation. pp. 705--712
+  (2010)
+
+\bibitem{tendresse2001effects}
+Tendresse, I.l., Gottlieb, J., Kao, O.: The effects of partial restarts in
+  evolutionary search. In: International Conference on Artificial Evolution
+  (Evolution Artificielle). pp. 117--127. Springer (2001)
+
+\bibitem{mathias1998effects}
+Mathias, K.E., Schaffer, J.D., Eshelman, L.J., Mani, M.: The effects of control
+  parameters and restarts on search stagnation in evolutionary programming. In:
+  International Conference on Parallel Problem Solving from Nature. pp.
+  398--407. Springer (1998)
+
+\bibitem{read1968system}
+Read, K., Ashford, J.: A system of models for the life cycle of a biological
+  organism. Biometrika  55(1),  211--221 (1968)
+
+\bibitem{nematollahi2020novel}
+Nematollahi, A.F., Rahiminejad, A., Vahidi, B.: A novel meta-heuristic
+  optimization method based on golden ratio in nature. Soft Computing  24(2),
+  1117--1151 (2020)
+
+\bibitem{gaikwad2021face}
+Gaikwad, P.S., Kulkarni, V.B.: Face recognition using golden ratio for door
+  access control system. In: Advances in Signal and Data Processing, pp.
+  209--231. Springer (2021)
+
+\bibitem{khesin2022golden}
+Khesin, B., Wang, H.: The golden ratio and hydrodynamics. The Mathematical
+  Intelligencer  44(1),  22--27 (2022)
+
+\bibitem{sym13081334}
+Battaloglu, R., Simsek, Y.: On new formulas of fibonacci and lucas numbers
+  involving golden ratio associated with atomic structure in chemistry.
+  Symmetry  13(8) (2021), \url{https://www.mdpi.com/2073-8994/13/8/1334}
+
+\bibitem{https://doi.org/10.1111/nyas.14895}
+Narushin, V.G., Griffin, A.W., Romanov, M.N., Griffin, D.K.: Measurement of the
+  neutral axis in avian eggshells reveals which species conform to the golden
+  ratio. Annals of the New York Academy of Sciences  n/a(n/a) (2022),
+  \url{https://nyaspubs.onlinelibrary.wiley.com/doi/abs/10.1111/nyas.14895}
+
+\bibitem{fortin2012deap}
+Fortin, F.A., De~Rainville, F.M., Gardner, M.A.G., Parizeau, M., Gagn{\'e}, C.:
+  Deap: Evolutionary algorithms made easy. The Journal of Machine Learning
+  Research  13(1),  2171--2175 (2012)
+
+\bibitem{garcia2021event}
+Garc{\'\i}a-Valdez, M., Merelo, J.J.: Event-driven multi-algorithm
+  optimization: Mixing swarm and evolutionary strategies. In: International
+  Conference on the Applications of Evolutionary Computation (Part of EvoStar).
+  pp. 747--762. Springer (2021)
+
+\bibitem{stanley2002evolving}
+Stanley, K.O., Miikkulainen, R.: Evolving neural networks through augmenting
+  topologies. Evolutionary computation  10(2),  99--127 (2002)
+
+\bibitem{miikkulainen2019evolving}
+Miikkulainen, R., Liang, J., Meyerson, E., Rawal, A., Fink, D., Francon, O.,
+  Raju, B., Shahrzad, H., Navruzyan, A., Duffy, N., et~al.: Evolving deep
+  neural networks. In: Artificial intelligence in the age of neural networks
+  and brain computing, pp. 293--312. Elsevier (2019)
+
+\end{thebibliography}
