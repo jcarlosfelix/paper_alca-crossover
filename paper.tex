@@ -32,7 +32,6 @@
 \usepackage[export]{adjustbox}
 
 \usepackage[section]{placeins} % Forces an image to be displayed in it's section
-
 %\usepackage{draftwatermark}
 
 
@@ -73,11 +72,11 @@
 %
 \maketitle
 
-\abstract*{In a previous work, we introduced a population-based, bio-inspired algorithm. The proposed algorithm is inspired by the biological animal life cycle, consisting of the stages of birth, growth, reproduction, and death. Our algorithm was initially based on the canonical Genetic Algorithm (GA), where all the individuals have a genotype (chromosome). One difference to highlight in our algorithm is that both the crossing and the mutation are executed through independent processes that randomly affect the population. This paper focuses on breeding, whereas in earlier versions of the algorithm, we used the traditional GA one-point crossover. In this paper, we propose a different alternative to the classical approach, where part of the genetic information is directly copied to each of the offsprings in the crossover operator, where this type of crossover may not perform well in continuous optimization problems. In this proposal, we use the parent's genetic information for each gene, using those values as lower and upper bounds of a range, where a random value within that range determines the new value for that gene index of the offspring. This is similar to what is used by algorithms such as Differential Evolution, where we consider our proposal as a variation of existing proposals. We expect this new operator to allow the offspring to continue exploring new search spaces with the birth of individuals. In this paper, we use the benchmark functions introduced in the competition on evolutionary computation for the 2017 edition (CEC2017) to compare the traditional one-point crossover and our proposed strategy. Experimental results indicate that our proposed operator may be a good alternative for the canonical crossover.}
+\abstract*{In a previous work, we introduced a population-based, bio-inspired algorithm. The proposed algorithm is inspired by the biological animal life cycle, consisting of the stages of birth, growth, reproduction, and death. Our algorithm was initially based on the canonical Genetic Algorithm (GA), where all the individuals have a genotype (chromosome). One difference to highlight in our algorithm is that both the crossing and the mutation are executed through independent processes that randomly affect the population. This paper focuses on breeding, whereas in earlier versions of the algorithm, we used the traditional GA one-point crossover. In this paper, we propose a different alternative to the classical approach, where part of the genetic information is directly copied to each of the offspring in the crossover operator, where this type of crossover may not perform well in continuous optimization problems. In this proposal, we use the parent's genetic information for each gene, using those values as lower and upper bounds of a range, where a random value within that range determines the new value for that gene index of the offspring. This is similar to what is used by algorithms such as Differential Evolution, where we consider our proposal as a variation of existing proposals. We expect this new operator to allow the offspring to continue exploring new search spaces with the birth of individuals. In this paper, we use the benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC2017) to compare the traditional one-point crossover and our proposed strategy. Experimental results indicate that our proposed operator may be a good alternative for the canonical crossover.}
 
 
 
-\abstract{In a previous work, we introduced a population-based, bio-inspired algorithm. The proposed algorithm is inspired by the biological animal life cycle, consisting of the stages of birth, growth, reproduction, and death. Our algorithm was initially based on the canonical Genetic Algorithm (GA), where all the individuals have a genotype (chromosome). One difference to highlight in our algorithm is that both the crossing and the mutation are executed through independent processes that randomly affect the population. This paper focuses on breeding, whereas in earlier versions of the algorithm, we used the traditional GA one-point crossover. In this paper, we propose a different alternative to the classical approach, where part of the genetic information is directly copied to each of the offsprings in the crossover operator, where this type of crossover may not perform well in continuous optimization problems. In this proposal, we use the parent's genetic information for each gene, using those values as lower and upper bounds of a range, where a random value within that range determines the new value for that gene index of the offspring. This is similar to what is used by algorithms such as Differential Evolution, where we consider our proposal as a variation of existing proposals. We expect this new operator to allow the offspring to continue exploring new search spaces with the birth of individuals. In this paper, we use the benchmark functions introduced in the competition on evolutionary computation for the 2017 edition (CEC2017) to compare the traditional one-point crossover and our proposed strategy. Experimental results indicate that our proposed operator may be a good alternative for the canonical crossover.}
+\abstract{In a previous work, we introduced a population-based, bio-inspired algorithm. The proposed algorithm is inspired by the biological animal life cycle, consisting of the stages of birth, growth, reproduction, and death. Our algorithm was initially based on the canonical Genetic Algorithm (GA), where all the individuals have a genotype (chromosome). One difference to highlight in our algorithm is that both the crossing and the mutation are executed through independent processes that randomly affect the population. This paper focuses on breeding, whereas in earlier versions of the algorithm, we used the traditional GA one-point crossover. In this paper, we propose a different alternative to the classical approach, where part of the genetic information is directly copied to each of the offspring in the crossover operator, where this type of crossover may not perform well in continuous optimization problems. In this proposal, we use the parent's genetic information for each gene, using those values as lower and upper bounds of a range, where a random value within that range determines the new value for that gene index of the offspring. This is similar to what is used by algorithms such as Differential Evolution, where we consider our proposal as a variation of existing proposals. We expect this new operator to allow the offspring to continue exploring new search spaces with the birth of individuals. In this paper, we use the benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC2017) to compare the traditional one-point crossover and our proposed strategy. Experimental results indicate that our proposed operator may be a good alternative for the canonical crossover.}
 
 %\keywords{Distributed Bioinspired Algorithms \and Genetic Algorithms \and Cloud Computing.}
 
@@ -85,293 +84,135 @@
 \section{Introduction}
     \label{sec:1}
 
-    A new beginning (this is an upload test).
+    Biologically inspired algorithms are a very effective technique to solve complex optimization problems\cite{castillo2019comparative,valdez2021swarm,acherjee2020ultrasonic}. Traditionally, nature-inspired algorithms are developed with a sequential perspective\cite{porto2018evolutionary,back1996evolutionary},  meaning that all tasks execute one step at a time, where all processes must wait for the previous to finish before continuing (synchronous perspective). Some architectures address this issue by working on the cloud\cite{valdez2021container,garcia2015evospace,merelo2016nodio} and finding solutions on distributed technologies. 
     
-    Biologically inspired algorithms have proven to be very effective when
-    solving complex optimization problems
-    \cite{castillo2019comparative,valdez2021swarm,acherjee2020ultrasonic}, but
-    the more challenging the problem, the more computing power it will require
-    to solve them \cite{ontiveros2018high}. We consider the main reason it requires 
-    more computing power is related to the evaluation of the fitness function, 
-    which means calculating the solution to the real problem our algorithm is searching for. 
-    One technique to manage this
-    processing power demand is to use distributed computing
-    \cite{thain2005distributed} or the cloud resources 
-    \cite{garcia2013there,eshratifar2019bottlenet}. This strategy allows adaptation 
-    of the required computing need according to the problem's complexity.
-    
-    Traditionally, bio-inspired algorithms are developed with a sequential
-    (synchronous) perspective
-    \cite{porto2018evolutionary,back1996evolutionary}, where a process must
-    pause for the previous task to finish before continuing. 
-    Some architectures address this issue \cite{valdez2021container,garcia2015evospace,merelo2016nodio} 
-    by working on the cloud and finding solutions on distributed technologies.
-    In this research, we present a distributed algorithm totally built as a 
-    native cloud solution, where its processes execute asynchronously and in 
-    parallel, managing the processing workload among several computers.  
-    This strategy allows to elastically increase (or reduce) the
-    computing power according to the nature of the challenge
-    \cite{armbrust2010view}.
+    In previous work, we introduced a population-based, bio-inspired algorithm\cite{Felix-Saul2022,Felix-Saul2023}. The proposed algorithm is inspired by the biological animal life cycle, consisting of the stages\cite{read1968system} of birth, growth, reproduction, and death. Our algorithm was initially based on the canonical Genetic Algorithm (GA)\cite{holland1992genetic,holland1984genetic}, where all the individuals have a genotype (chromosome). Our algorithm’s goal is to mimic the animal life cycle, where at any given moment, new individuals are born to be part of the population and participate in the collective evolution. As time passes, they grow older and mature, suffering changes throughout their lives that we chose to represent as mutations. 
 
-    In previous work, we introduced an algorithm inspired by the biological
-    life-cycle of animal species \cite{Felix-Saul2022}. As in nature, population individuals grow older
-    and age. In this algorithm's reproduction process, couples must match by mutual
-    attraction, where sometimes individuals won't procreate offspring because of
-    the mate's low appeal. As time passes, the environment kills its individuals
-    either because of low fitness or age, causing occasional population extinction.
+    In our analysis, we thought of death’s work to maintain balance in the population by enforcing the survival of the fittest. As in life, death can happen to everyone: from a newborn to the elderly, where fitness will determine the individual’s longevity. This algorithm was inspired by the traditional Genetic Algorithm \cite{holland1992genetic,holland1984genetic}, meaning that all individuals have a genotype (chromosome) that is a list of values. We calculate the individual’s fitness with the evaluation function and do crossover and mutation to the population. 
     
-    We define extinction as a situation in which something no longer exists; in
-    our case scenario, when we refer to extinction in our algorithm, it means
-    the population of individuals no longer exists. When this condition
-    presents itself, it is required to create a new population to continue
-    evolution (restart). 
-    
-    Population restart is the process in which we create a
-    new set of individuals to replace the others that have already died (or
-    were discarded) due to their aptitude. In a previous work \cite{Felix-Saul2022} 
-    we used to generate a new random set of solutions, with the cost of losing 
-    all evolution knowledge. In the state of the art, we have found other methodologies 
-    that have successfully sought to solve the problem of population extinction with
-    restarts \cite{hellwig2020modified, loshchilov2013cma, jansen2010aging, tendresse2001effects, mathias1998effects}.
-        
-    One contribution of this paper is to prove that it is possible to
-    evolve a population of individuals, similar to a Genetic Algorithm (GA),
-    using a distributed, parallel, and asynchronous methodology by algorithm
-    implementation and testing.
+    What makes our strategy different is that we don’t use the concept of evolutionary generations. We manage our set of solutions as a whole that continuously evolve over time. Allowing individuals of different ages to breed and generate offspring, as it happens in nature. One difference to highlight in our algorithm is that both the crossover (reproduction) and mutation (growth) are executed through independent processes that randomly affect the population. We display the general model concept for the Animal Life Cycle Algorithm (ALCA) in Figure~\ref{fig.algorithm_model}. 
 
-    The main contribution of this research is to demonstrate how to improve the
-    algorithm's behavior, by solving population extinction caused by nature's
-    pressure in the Animal Life Cycle Algorithm with one of the most promising
-    alternatives: the projection of the Elite towards the Champion. To validate
-    our findings, we compare the results obtained with the latter and the
-    random use of the more traditional alternatives (mutation and crossover),
-    using classic benchmark functions for optimization for comparison.
+    In this research, we propose a new alternative for reproduction, a new breeding crossover approach for evolutionary algorithms using the classic one-point crossover as a reference to our proposal. We performed comparison experiments using the mathematical benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC-2017) for evaluation. We finalize with a statistical Z-Test with a 95 percent confidence level to determine the best alternative.
 
-    This paper is organized as follows. First, we 
-    illustrate our algorithm model, the encountered problem with the occasional
-    population extinction, and our proposed solution in
-    section~\ref{section.proposal}, followed by our experimental configuration and
-    results in section~\ref{section.experiments}, where we continue to analyze and
-    describe some of our research findings in section~\ref{section.discussion}. We
-    finalize by presenting some inferences based on the results of our experiments
-    in section~\ref{section.conclusions}.
+    We organized this paper in the following structure. First, we illustrate our alternative crossover proposal, from the inspiration to a detailed example. We compare the canonical one-point crossover with our proposed solution in section~\ref{section.proposal}, followed by our experiment configuration and results in section~\ref{section.experiments}, where we analyze and describe some of our research findings in section~\ref{section.discussion}. We finalize by presenting some inferences based on the results of our experiments in section~\ref{section.conclusions}.
+
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.90\linewidth]{img/fig_algorithm_model.pdf}
+        \caption{Animal Life Cycle Algorithm model.} \label{fig.algorithm_model}
+        \end{figure}
+
 
 \section{Proposal}
     \label{section.proposal}
 
-    In previous work, we presented an algorithm inspired by nature 
-    \cite{Felix-Saul2022}, where we model our algorithm based on
-    the generalization of the life cycle of animal species. Our algorithm, as
-    in nature, consists of four stages \cite{read1968system}: birth, growth,
-    reproduction, and death. One key concept of our idea is that combining
-    those processes evolves the population. We propose to execute all these
-    stages in parallel and asynchronously on a continuously evolving
-    population.
+    Let's imagine that colors black and white fell in love and had beautiful children. If we had to guess what color their offspring would be, it could only be predictable its children's color would be inside the domain shown in Figure~\ref{fig.grayscale_continuous}.
 
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.70\linewidth]{img/fig_grayscale_continuous.pdf}
+        \caption{Black and white offspring predictable color domain.} \label{fig.grayscale_continuous}
+        \end{figure}
 
-    \subsection{Algorithm Model}
-        
-        This algorithm was inspired by the traditional Genetic Algorithm,
-        meaning that all individuals have a genotype (chromosome) that is a
-        list of values. We calculate the individual's fitness with the
-        evaluation function and do crossover and mutation to the population.
-        What makes our strategy different is that we don't use the concept of
-        evolutionary generations. We manage our set of solutions as a whole
-        that continuously evolve over time. Allowing individuals of different
-        ages to breed and generate offspring, as it happens in nature. The
-        crossover and mutation execute as independent processes that randomly
-        affect the individuals.
+    If we replace colors black and white with values 0 and 1 respectively, how many values can we find in between? We could replace attributes, switching from color to height, strength, agility, or any other feature we might need to focus on. The parents' attribute values will determine how their offspring's attributes are defined. This paper focuses on breeding (or reproduction), whereas in earlier versions of the algorithm, we used the traditional (GA) one-point crossover. 
 
-        Our algorithm's goal is to mimic the animal life cycle, where at any
-        given moment, new individuals are born to be part of the population and
-        participate in the collective evolution. As time passes, they grow
-        older and mature, suffering changes throughout their lives that we
-        chose to represent as mutations. In our analysis, we considered a
-        couple's attraction a fundamental factor in reproduction. We thought of
-        death's work to maintain balance in the population by enforcing the
-        survival of the fittest. As in life, death can happen to everyone: from
-        a newborn to the elderly, where fitness will determine the individual's
-        longevity. We display the general model concept in
-        Figure~\ref{fig.algorithm_model}.
+    \subsection{Crossover Proposal}
 
-        \subsubsection{Birth} Birth is the first step of the population's
-        evolution. For the algorithm representation, we begin with the
-        generation of a randomly set of individuals.
-        
-        \subsubsection{Growth} In our algorithm representation, there is a
-        direct correlation between elapsed time and the population's evolution.
-        For this to be possible in our proposal, all individuals must grow
-        older and change as time progresses. With each increment of age, an
-        individual may improve or deteriorate. We chose to manifest this idea
-        by performing a small mutation in each change.
+    In this paper, we propose a different alternative to the classical approach, where part of the genetic information is directly copied to each of the offspring in the crossover operator, where this type of crossover may not perform well in continuous optimization problems. We provide an example of the One Point Crossover in Figure~\ref{fig.onepoint_crossover}.
 
-        \subsubsection{Reproduction} In this step, we select a random pair of
-        individuals and evaluate their couple's attraction, where fitness will
-        be the decisive factor that impacts its value. The higher the fitness
-        of the individual, the more attractive it will appear to fellow
-        individuals. As a consequence of the previous concept, we can
-        anticipate that not all couples will produce offspring, meaning
-        reproduction will not always be successful.
-        
-        \subsubsection{Death} Death is the last step of the animal life cycle,
-        as in our algorithm. We chose death as a representation of all the
-        environmental challenges for survival, where its execution enforces the
-        survival of the fittest. As time progresses, so does increase nature's
-        level of danger. The better the individual fitness will increase its
-        chances of survival.
-        
-        \begin{figure}
-            \centering
-            \includegraphics[width=100mm]{img/fig_algorithm_model.pdf}
-            \caption{Animal Life Cycle Algorithm model.} \label{fig.algorithm_model}
-            \end{figure}
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.70\linewidth]{img/fig_onepoint_crossover.pdf}
+        \caption{Classical approach example for the One Point Crossover, with crossover point 3.} \label{fig.onepoint_crossover}
+        \end{figure}
 
-    \subsection{Problem}
+    In this proposal, we use the parent's genetic information for each gene, using those values as lower and upper bounds of a range, where a random value within that range determines the new value for that gene index of the offspring. Our proposal example for the Continuous Range Crossover is displayed in Figure~\ref{fig.contrange_crossover}, where it should be noted that we construct a template that will be used for all the offspring generated by each couple.
 
-        In this algorithm's reproduction process, we find mating couples by mutual
-        attraction, where sometimes individuals won't procreate offspring because of
-        the mate's low appeal. As time passes, the environment could kill its
-        individuals either because they have low fitness or age, leading to extinction,
-        meaning there are no more individuals in the population left to reproduce. When
-        this condition presents, if evaluations are available and termination
-        conditions enable the algorithm to continue the search, it is required to
-        create a new set of individuals. We illustrate the general flowchart for the
-        Life-Cycle algorithm in Figure~\ref{fig.flowchart}.
-        
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.70\linewidth]{img/fig_contrange_crossover.pdf}
+        \caption{Our proposal example for the Continuous Range Crossover mating the same couple of individuals.} \label{fig.contrange_crossover}
+        \end{figure}        
+    
+    \FloatBarrier
 
-        \begin{figure}
-            \includegraphics[width=\textwidth]{img/fig_flowchart.pdf}
-            \caption{Animal Life-Cycle Algorithm general flowchart.} \label{fig.flowchart}
-            \end{figure}
-
-    \subsection{Proposed Solution}
-        % It is important to do a literature review for the following papers, there are 
-        % other works that tackle similar problems or use it as a strategy. - M 
-        In this article, we test various strategies to generate a new population to
-        replace individuals that have already died (or were discarded) due to their
-        aptitude, as happens in the life cycle. We previously used to generate a new
-        random set of solutions, with the cost of losing all evolution knowledge. 
-        
-        This article proposes some strategies to carry out this operation,
-        where the presented distribution strategy obtained the best results. We
-        propose one promising alternative to restart the population, to solve
-        extinction caused by nature's pressure in the Life Cycle algorithm: the
-        projection of the historically best-found candidate solutions (Elite)
-        towards the best-found candidate solution (Champion).
-
-        The strategy we describe in this paper use an elite set, that includes
-        the historically best-found candidate solutions to take
-        advantage of the historical evolution. Our goal is for the offspring to
-        be somewhat close to the best individuals of the Elite.
-        We use the golden ratio to compute the distance between new individuals in the population, making
-        an improved distribution. We can consider our strategy an improvement 
-        over other alternatives because of the findings of our latter experiments.
-
-        Based on the historically best candidate
-        solution and the elite set, we use the Golden Ratio (shown in
-        Equation~\ref{eq.golden_ratio}) to compute the distance between new individuals
-        in the population, making an improved distribution. It randomly selects a
-        solution from the elite set and uses the Golden Ratio 
-        \cite{nematollahi2020novel, gaikwad2021face, khesin2022golden, sym13081334, https://doi.org/10.1111/nyas.14895} 
-        to compute multiple solutions against the best-found candidate.
-
-        \begin{equation}
-            \begin{matrix}\includegraphics[width=25mm]{img/eq_golden_ratio.pdf}\end{matrix}
-            \label{eq.golden_ratio}
-            \end{equation}
-
-        This strategy is how we can calculate the projection of the
-        historically Elite towards the Champion solution. To illustrate this
-        concept, we include Figure~\ref{fig.elite_projection}, placing the
-        Elite solution on the far right and the Champion solution on the left
-        corner. We can observe the higher amount of new solutions progressively
-        closer to the Champion.
-        
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.65\textwidth]{img/fig_elite_projection.pdf}
-            \caption{Projection of an Elite solution (found on the right) towards the Champion (at the left).} \label{fig.elite_projection}
-            \end{figure}
-
-        This process generates new solutions that will be the new population set. It
-        uses the Golden Ratio to progressively approximate from an Elite solution to
-        the Champion. This strategy facilitates to find apparently hidden solutions,
-        having an exploitation emphasis. Figure~\ref{fig.elite_projection_swarm}
-        displays the projection of five Elite solutions (on the corners) towards the
-        Champion (in the center).
-
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.85\textwidth]{img/fig_elite_projection_swarm.pdf}
-            \caption{Projection of five Elite solutions towards the Champion, results in a mini-swarm.} \label{fig.elite_projection_swarm}
-            \end{figure}
-        
-        \FloatBarrier
 
 \section{Experiments}
     \label{section.experiments}
 
-    As a proof-of-concept, we implemented the algorithm with Docker containers,
-    where we compare the results obtained with the projection of the Elite towards
-    the Champion strategy and the random use of the more traditional alternatives
-    (such as mutation and crossover), using classic benchmark functions for
-    optimization as implemented by the DEAP (Distributed Evolutionary Algorithms in
-    Python) library \cite{fortin2012deap}.
+    To validate our proposal, we performed experiments using the mathematical benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC-2017) for evaluation to compare the traditional one-point crossover and our proposed strategy. We finalize with a statistical Z-Test with a ninety-five percent confidence level to determine the best alternative. Table~\ref{tab.benchmark_functions} lists the thirty mathematical benchmark functions used for evaluation, to obtain the comparison results shown in our research.
 
-    \subsection{Experimental Setup} 
-
-        The following tables show the configuration used to execute the experiments for
-        the analysis and comparison in this paper. In
-        Table~\ref{tab.general_configuration}, we can find the General Configuration
-        for the Animal Life Cycle Algorithm. All values from this configuration
-        remained constant during all phases of the experiment runs. The following
-        table, Table~\ref{tab.benchmark_fun_config}, shows the values used for the
-        Classic Benchmark Functions for Optimization, where these are adjusted
-        accordingly for each function.
-
-        % Please add the following required packages to your document preamble:
-        % \usepackage{booktabs}
-        % To change the size of the font use \scriptsize or \tiny
-        \begin{table}[]
-            \scriptsize
-            \centering
-            \caption{Animal Life Cycle Algorithm (ALCA) General Configuration.}\label{tab.general_configuration}
-            \begin{tabular}{@{}ll@{}}
-            \toprule
-            \multicolumn{2}{l}{\textbf{ALCA General Configuration}} \\ \midrule
-            Function name & ALL \\
-            Population & 500 \\
-            Target error & 1.00E-08 \\
-            Crossover rate & 100 \\
-            Mutation rate & 7 \\
-            Max age & 40 \\
-            Tournament rep. & 100 \\
-            Sample size & 20 \\
-            Base approval & 80 \\
-            Goal approval & 200 \\ \bottomrule
-            \end{tabular}
-            \end{table}
-
-        \begin{table}[]
-            \scriptsize
-            \centering
-            \caption{Classic Benchmark Functions for Optimization Configuration.}\label{tab.benchmark_fun_config}
-            \begin{tabular}{@{}llllllll@{}}
-            \toprule
-            \multicolumn{8}{l}{\textbf{Benchmark Configuration Setup}} \\ \midrule
-            Function name & Ackley & Bohachevsky & Griewank & Rastrigin & Sphere & Rosenbrock & Rosenbrock \\
-            Dimensions & 5, 10 & 5, 10 & 5, 10 & 5, 10 & 5, 10 & 5 & 10 \\
-            Max evaluations & 200,000 & 200,000 & 200,000 & 200,000 & 200,000 & 500,000 & 1,000,000 \\
-            Max stagnation & 50,000 & 50,000 & 50,000 & 50,000 & 50,000 & 125,000 & 250,000 \\
-            Target fitness & -20.0 & -12.0 & -150.0 & -80.0 & -50.0 & -3500.0 & -3500.0 \\
-            Bound matrix & {[}-32, 32{]} & {[}-2, 2{]} & {[}-500, 500{]} & {[}-5, 5{]} & {[}-5, 5{]} & {[}-2, 2{]} & {[}-2, 2{]} \\ \bottomrule
-            \end{tabular}
-            \end{table}
-        
-        \FloatBarrier
+    % Please add the following required packages to your document preamble:
+    % \usepackage{booktabs}
+    % \usepackage[table,xcdraw]{xcolor}
+    % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+    \begin{table}[]
+    \scriptsize
+    \centering
+    \caption{Mathematical benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC-2017).}\label{tab.benchmark_functions}    
+    \begin{tabular}{@{}cllcl@{}}
+    \toprule
+    \multicolumn{5}{c}{\textbf{CEC-2017 Mathematical Benchmark Functions}} \\ \midrule
+    \textbf{Fx} & \textbf{Function Name} &  & \textbf{Fx} & \textbf{Function Name} \\
+    F1 & Shifted and Rotated   Bent Cigar Function &  & F16 & Hybrid function 6 \\
+    F2 & Shifted and Rotated   Sum of Different Power Function &  & F17 & Hybrid function 7 \\
+    F3 & Shifted and Rotated   Zakharov Function &  & F18 & Hybrid function 8 \\
+    F4 & Shifted and Rotated   Rosenbrock's Function &  & F19 & Hybrid function 9 \\
+    F5 & Shifted and Rotated   Rastrigin's Function &  & F20 & Hybrid function 10 \\
+    F6 & Shifted and Rotated   Schaffer F7 Function &  & F21 & Composition function   1 \\
+    F7 & Shifted and Rotated   Lunacek Bi-Rastrigin's Function &  & F22 & Composition function   2 \\
+    F8 & Shifted and Rotated   Non-Continuous Rastrigin's Function &  & F23 & Composition function   3 \\
+    F9 & Shifted and Rotated   Levy Function &  & F24 & Composition function   4 \\
+    F10 & Shifted and Rotated   Schwefel's Function &  & F25 & Composition function   5 \\
+    F11 & Hybrid function 1 &  & F26 & Composition function   6 \\
+    F12 & Hybrid function 2 &  & F27 & Composition function   7 \\
+    F13 & Hybrid function 3 &  & F28 & Composition function   8 \\
+    F14 & Hybrid function 4 &  & F29 & Composition function   9 \\
+    F15 & Hybrid function 5 &  & F30 & Composition function   10 \\ \bottomrule
+    \end{tabular}
+    \end{table}
 
 
-    \subsection{Experiment Results}
+    \subsection{Experimental Configuration}
+
+    We used the Animal Life Cycle Algorithm (ALCA) for our experiments, switching between the breeding strategies (One Point and Continuous Range Crossover) with the same general setup. In Table~\ref{tab.general_configuration}, we can find the General Configuration used to run the experiments for our research, where all values from this configuration remained constant during all phases of the experiment runs.
+
+    For each of the thirty mathematical benchmark functions from the CEC-2017, we evaluated the ten and thirty dimensions, where we performed fifty-one runs per dimension. To find and determine the best alternative finalized with a statistical Z-Test with a ninety-five percent confidence level.
+
+    % Please add the following required packages to your document preamble:
+    % \usepackage{booktabs}
+    % \usepackage[table,xcdraw]{xcolor}
+    % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+    \begin{table}[]
+    \scriptsize
+    \centering
+    \caption{Animal Life Cycle Algorithm (ALCA) General Configuration.}\label{tab.general_configuration}    
+    \begin{tabular}{@{}ll@{}}
+    \toprule
+    \multicolumn{2}{l}{\textbf{ALCA   General Configuration}} \\ \midrule
+    \textbf{Function name} & \textbf{ALL} \\
+    Population & 500 \\
+    Evaluations & 10,000 * Dim \\
+    Crossover rate & 100 \\
+    Mutation rate & 7 \\
+    Max age & 5 \\
+    Tournament rep. & 100 \\
+    Sample size & 20 \\
+    Base approval & 80 \\
+    Goal approval & 200 \\ \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \FloatBarrier
+
+
+    \subsection{Experimental Results}
+
+    We describe how to interpret the results presented in our Box and Whisker charts for each mathematical function. We display the ten and thirty-dimension charts on the left and right sides. We can find the results accumulated in 51 runs, in green color the One Point crossover, and in blue color the Continuous Range crossover. The closer the error results get to the zero value, the better.
+
+    
+    STOP HERE --- A new beginning (this is an upload test).    
+
 
         For each experiment, we ran 30 independent executions per algorithm and
         dimensions specified. We recorded the following results: best-found error average,
