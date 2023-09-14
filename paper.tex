@@ -210,335 +210,337 @@
 
     We describe how to interpret the results presented in our Box and Whisker charts for each mathematical function. We display the ten and thirty-dimension charts on the left and right sides. We can find the results accumulated in 51 runs, in green color the One Point crossover, and in blue color the Continuous Range crossover. The closer the error results get to the zero value, the better.
 
-    
-    STOP HERE --- A new beginning (this is an upload test).    
+    \begin{figure}[!ht]
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F1x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F1x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F2x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F2x30D.pdf} 
+        \end{minipage}
+        
+        \caption{Box and Whisker charts for mathematical functions F1 and F2. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F1-F2}
+    \end{figure}
 
+    \FloatBarrier
 
-        For each experiment, we ran 30 independent executions per algorithm and
-        dimensions specified. We recorded the following results: best-found error average,
-        standard deviation, total number of evaluations, and total elapsed time (in
-        seconds). The labels used on the results of our summarized experiments tables
-        are the following:
+    \begin{figure}[!ht]
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F3x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F3x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F4x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F4x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F5x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F5x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F6x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F6x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F7x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F7x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F8x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F8x30D.pdf} 
+        \end{minipage}
 
-        \begin{itemize}
-            \item   Error:       is the best-found error average.
-            \item   St-Dev:      is the standard deviation calculated from the error. 
-            \item   Evals.:      is the total number of evaluations the algorithm executed.
-            \item   Time:        is the total elapsed or wall clock time, in seconds. 
-        \end{itemize}
+        \caption{Box and Whisker charts for mathematical functions F3 to F8. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F3-F8}
+    \end{figure}
 
-        The alternatives to restart this new population are the creation of a new set
-        of candidate solutions based on either: 1. Crossing the Champion with the Elite;
-        2. The mutation with uniform modification from the Elite; 3. The
-        projection of the Elite towards the Champion; 4. Based on random use of the
-        previous alternatives. We compared three strategies by grouping the previous
-        alternatives in the following:
+    \FloatBarrier
 
-        \begin{itemize}
-            \item   Xover Mutation:      Crossing the Champion with the Elite, and the mutation with uniform modification from the Elite.
-            \item   Elite Projection:    The projection of the Elite towards the Champion. 
-            \item   All Random:          Based on random use of the previous alternatives.
-        \end{itemize}
+    \begin{figure}[!ht]
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F9x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F9x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F10x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F10x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F11x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F11x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F12x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F12x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F13x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F13x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F14x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F14x30D.pdf} 
+        \end{minipage}
 
-        \subsubsection{Ackley Benchmark Function Experiment}
+        \caption{Box and Whisker charts for mathematical functions F9 to F14. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F9-F14}
+    \end{figure}
 
-            The goal of the first experiment was to confirm that this paper’s
-            proposed strategy obtained improved results over our basic
-            technique, which created a new population with a random generation
-            of a new set of candidate solutions. We chose Ackley as the first
-            Classic Benchmark Function for Optimization to test our algorithm
-            behavior, where Figure~\ref{fig.fun_ackley} shows its corresponding
-            Box and Whisker chart, and we summarized the results in
-            Tables~\ref{tab.fun_ackley5} and~\ref{tab.fun_ackley10} (for five 
-            and ten dimensions, respectively).
-            
-            \begin{figure}
-                \includegraphics[width=0.99\linewidth, frame]{img/fig_fun_ackley.pdf}
-                \caption{Box and whisker chart for the Ackley Benchmark Function, 5 vs 10 Dimensions.} \label{fig.fun_ackley}
-                \end{figure}
+    \FloatBarrier
 
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Ackley Benchmark Function summarized experiments table for 5 Dimensions.}\label{tab.fun_ackley5}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Ackley Function - 5 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 8.69E-08 & 1.36E-08 & 46,331 & 49.9 \\
-                \textbf{Elite Projection} & 6.33E-08 & 2.70E-08 & 13,811 & 18.1 \\
-                \textbf{All Random} & 6.78E-08 & 2.55E-08 & 30,236 & 32.8 \\ \bottomrule
-                \end{tabular}
-                \end{table}
+    \begin{figure}[!ht]
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F15x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F15x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F16x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F16x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F17x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F17x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F18x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F18x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F19x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F19x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F20x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F20x30D.pdf} 
+        \end{minipage}
 
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Ackley Benchmark Function summarized experiments table for 10 Dimensions.}\label{tab.fun_ackley10}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Ackley Function - 10 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 9.35E-08 & 5.93E-09 & 104,842 & 111.7 \\
-                \textbf{Elite Projection} & 5.11E-08 & 3.13E-08 & 16,019 & 20.1 \\
-                \textbf{All Random} & 6.89E-08 & 2.75E-08 & 43,631 & 46.3 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-            
-            \FloatBarrier
+        \caption{Box and Whisker charts for mathematical functions F15 to F20. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F15-F20}
+    \end{figure}
 
+    \FloatBarrier
 
-        \subsubsection{Bohachevsky Benchmark Function Experiment}
+    \begin{figure}[!ht]
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F21x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F21x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F22x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F22x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F23x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F23x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F24x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F24x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F25x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F25x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F26x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F26x30D.pdf} 
+        \end{minipage}
 
-            As our second experiment to further validate and prove our
-            algorithm behavior, we chose Bohachevsky Classic Benchmark Function
-            for Optimization. Figure~\ref{fig.fun_bohachevsky} shows its
-            corresponding Box and Whisker chart, where we summarized the
-            results in Tables~\ref{tab.fun_bohachevsky5} and~\ref{tab.fun_bohachevsky10} 
-            (for five and ten dimensions, respectively). Due to the observation 
-            and analysis of these results, we identify our proposed strategy 
-            obtained solutions in the same order as the traditional Xover Mutation, 
-            in a significantly reduced number of evaluations.
+        \caption{Box and Whisker charts for mathematical functions F21 to F26. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F21-F26}
+    \end{figure}
 
-            \begin{figure}
-                \includegraphics[width=0.99\linewidth, frame]{img/fig_fun_bohachevsky.pdf}
-                \caption{Box and whisker chart for the Bohachevsky Benchmark Function, 5 vs 10 Dimensions.} \label{fig.fun_bohachevsky}
-                \end{figure}
+    \FloatBarrier
 
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Bohachevsky Benchmark Function summarized experiments table for 5 Dimensions.}\label{tab.fun_bohachevsky5}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Bohachevsky Function - 5 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 7.28E-08 & 2.20E-08 & 15,010 & 24.2 \\
-                \textbf{Elite Projection} & 4.51E-08 & 2.94E-08 & 8,266 & 12.6 \\
-                \textbf{All Random} & 6.16E-08 & 2.85E-08 & 11,998 & 21.7 \\ \bottomrule
-                \end{tabular}
-                \end{table}
+    \begin{figure}[!ht]
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F27x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F27x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F28x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F28x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F29x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F29x30D.pdf} 
+        \end{minipage}
+        \vfill
+        \vspace{0.05 cm}
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F30x10D.pdf} 
+        \end{minipage}
+        \hfill
+        \begin{minipage}[h]{0.49\linewidth}
+            \includegraphics[width=1\linewidth]{img/fig_experiment_F30x30D.pdf} 
+        \end{minipage}
 
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Bohachevsky Benchmark Function summarized experiments table for 10 Dimensions.}\label{tab.fun_bohachevsky10}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Bohachevsky Function - 10 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 8.66E-08 & 1.38E-08 & 40,166 & 44.4 \\
-                \textbf{Elite Projection} & 3.80E-08 & 3.34E-08 & 8,506 & 12.9 \\
-                \textbf{All Random} & 5.34E-08 & 3.76E-08 & 19,537 & 26.8 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-            
-            \FloatBarrier
+        \caption{Box and Whisker charts for mathematical functions F27 to F30. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F27-F30}
+    \end{figure}
 
+    \FloatBarrier
 
-        \subsubsection{Griewank Benchmark Function Experiment}
-
-            The third experiment objective was to confirm Animal Life Cycle
-            Algorithm continued finding solutions in a reduced number of
-            evaluations. For this test, we selected the Griewank Benchmark
-            Function for Optimization. Figure~\ref{fig.fun_griewank} shows its
-            corresponding Box and Whisker chart, where we summarized the
-            results in Tables~\ref{tab.fun_griewank5} and~\ref{tab.fun_griewank10} 
-            (for five and ten dimensions, respectively). With this analysis, 
-            we confirmed our strategy continued to obtain solutions in the same 
-            order as expected, in a reduced number of evaluations and less time.
-
-            \begin{figure}
-                \includegraphics[width=0.99\linewidth, frame]{img/fig_fun_griewank.pdf}
-                \caption{Box and whisker chart for the Griewank Benchmark Function, 5 vs 10 Dimensions.} \label{fig.fun_griewank}
-                \end{figure}
-
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Griewank Benchmark Function summarized experiments table for 5 Dimensions.}\label{tab.fun_griewank5}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Griewank Function - 5 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 6.92E-08 & 2.40E-08 & 44,566 & 48.3 \\
-                \textbf{Elite Projection} & 3.77E-08 & 2.74E-08 & 16,412 & 20.1 \\
-                \textbf{All Random} & 5.63E-08 & 2.99E-08 & 35,761 & 38.5 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Griewank Benchmark Function summarized experiments table for 10 Dimensions.}\label{tab.fun_griewank10}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Griewank Function - 10 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 8.07E-08 & 1.39E-08 & 92,885 & 100.0 \\
-                \textbf{Elite Projection} & 4.21E-08 & 3.40E-08 & 13,534 & 17.3 \\
-                \textbf{All Random} & 5.08E-08 & 3.54E-08 & 40,544 & 52.5 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-
-            \FloatBarrier
-
-
-        \subsubsection{Rastrigin Benchmark Function Experiment}
-
-            This experiment's goal was to follow and study the behavior of our
-            proposed strategy, to repeat the results in the same order as
-            expected, in a reduced number of both time and evaluations. We
-            selected Rastrigin Classic Benchmark Function for Optimization for
-            this experiment. Figure~\ref{fig.fun_rastrigin} shows its
-            corresponding Box and Whisker chart, where we summarized the
-            results in Tables~\ref{tab.fun_rastrigin5} and~\ref{tab.fun_rastrigin10} 
-            (for five and ten dimensions, respectively).
-
-            \begin{figure}
-                \includegraphics[width=0.99\linewidth, frame]{img/fig_fun_rastrigin.pdf}
-                \caption{Box and whisker chart for the Rastrigin Benchmark Function, 5 vs 10 Dimensions.} \label{fig.fun_rastrigin}
-                \end{figure}
-
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Rastrigin Benchmark Function summarized experiments table for 5 Dimensions.}\label{tab.fun_rastrigin5}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Rastrigin Function - 5 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 7.85E-08 & 1.59E-08 & 22,322 & 34.1 \\
-                \textbf{Elite Projection} & 4.42E-08 & 3.26E-08 & 10,860 & 14.8 \\
-                \textbf{All Random} & 5.66E-08 & 2.81E-08 & 21,122 & 35.0 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Rastrigin Benchmark Function summarized experiments table for 10 Dimensions.}\label{tab.fun_rastrigin10}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Rastrigin Function - 10   Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 8.56E-08 & 1.23E-08 & 53,579 & 58.7 \\
-                \textbf{Elite Projection} & 3.17E-08 & 2.57E-08 & 8,704 & 13.0 \\
-                \textbf{All Random} & 5.00E-08 & 3.16E-08 & 24,376 & 27.4 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-            
-            \FloatBarrier
-
-
-        \subsubsection{Sphere Benchmark Function Experiment}
-
-            For our fifth experiment we chose the Sphere Classic Benchmark
-            Function for Optimization. Even though the sphere function is
-            considered one of the simplest to solve, the same behavior was
-            consistent for the algorithm, where it showed a reduced number of
-            evaluations and execution time. We can confirm this affirmation
-            with the results shown in this experiment.
-            Figure~\ref{fig.fun_sphere} displays its corresponding Box and
-            Whisker chart, where we summarized the results in
-            Tables~\ref{tab.fun_sphere5} and~\ref{tab.fun_sphere10} (for
-            five and ten dimensions, respectively).
-
-            \begin{figure}
-                \includegraphics[width=0.99\linewidth, frame]{img/fig_fun_sphere.pdf}
-                \caption{Box and whisker chart for the Sphere Benchmark Function, 5 vs 10 Dimensions.} \label{fig.fun_sphere}
-                \end{figure}
-
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Sphere Benchmark Function summarized experiments table for 5 Dimensions.}\label{tab.fun_sphere5}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Sphere Function - 5 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 7.82E-08 & 1.65E-08 & 11,312 & 14.5 \\
-                \textbf{Elite Projection} & 3.60E-08 & 3.27E-08 & 7,056 & 10.9 \\
-                \textbf{All Random} & 6.14E-08 & 2.79E-08 & 9,158 & 12.2 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Sphere Benchmark Function summarized experiments table for 10 Dimensions.}\label{tab.fun_sphere10}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Sphere Function - 10 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 8.39E-08 & 1.45E-08 & 30,769 & 34.4 \\
-                \textbf{Elite Projection} & 4.28E-08 & 3.06E-08 & 9,236 & 13.3 \\
-                \textbf{All Random} & 5.32E-08 & 3.38E-08 & 21,465 & 26.3 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-
-            \FloatBarrier
-
-
-        \subsubsection{Rosenbrock Benchmark Function Experiment}
-
-            The goal of our sixth and last experiment was to study the behavior
-            of the Animal Life-Cycle Algorithm when tested with the Rosenbrock
-            Benchmark Function for Optimization. From all of our previous
-            evaluation functions, Rosenbrock presented the most difficult
-            challenge for our algorithm. This test facilitated the
-            differentiation between the three compared strategies because the
-            solutions found were in different numeric order. After all tests,
-            the Elite Projection proved to be the best alternative. We can
-            corroborate this by analyzing Figures~\ref{fig.fun_rosenbrock_5d}
-            and~\ref{fig.fun_rosenbrock_10d}, which shows its corresponding Box
-            and Whisker chart. We present the summarized results in
-            Tables~\ref{tab.fun_rosenbrock5} and~\ref{tab.fun_rosenbrock10}
-            (for five and ten dimensions, respectively).
-
-            \begin{figure}
-                \includegraphics[width=0.99\linewidth, frame]{img/fig_fun_rosenbrock_5d.pdf}
-                \caption{Box and whisker chart for the Rosenbrock Benchmark Function, 5 Dimensions.} \label{fig.fun_rosenbrock_5d}
-                \end{figure}
-
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Rosenbrock Benchmark Function summarized experiments table for 5 Dimensions.}\label{tab.fun_rosenbrock5}
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Rosenbrock Function - 5 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 4.65E-03 & 8.29E-03 & 500,000 & 646.4 \\
-                \textbf{Elite Projection} & 9.62E-07 & 1.86E-06 & 307,878 & 427.0 \\
-                \textbf{All Random} & 8.30E-06 & 1.58E-05 & 491,400 & 697.8 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-
-
-            \begin{figure}
-                \includegraphics[width=0.99\linewidth, frame]{img/fig_fun_rosenbrock_10d.pdf}
-                \caption{Box and whisker chart for the Rosenbrock Benchmark Function, 10 Dimensions.} \label{fig.fun_rosenbrock_10d}
-                \end{figure}
-
-            \begin{table}[]
-                \scriptsize
-                \centering
-                \caption{Rosenbrock Benchmark Function summarized experiments table for 10 Dimensions.}\label{tab.fun_rosenbrock10}        
-                \begin{tabular}{@{}lllll@{}}
-                \toprule
-                \multicolumn{5}{l}{\textbf{Rosenbrock Function - 10 Dimensions}} \\ \midrule
-                & \textbf{Error} & \textbf{St-Dev} & \textbf{Evals.} & \textbf{Time} \\
-                \textbf{Xover Mutation} & 1.35E+00 & 9.83E-01 & 1,000,000 & 1,384.3 \\
-                \textbf{Elite Projection} & 4.26E-02 & 4.34E-02 & 1,000,000 & 1,146.0 \\
-                \textbf{All Random} & 4.27E-02 & 6.02E-02 & 952,038 & 1,147.8 \\ \bottomrule
-                \end{tabular}
-                \end{table}
-            
-            \FloatBarrier
 
 \section{Discussion}
     \label{section.discussion}
+
+    For each experiment, we ran fifty-one independent executions per CEC-2017 mathematical benchmark function and dimensions specified. We recorded the following results: best-found error average, standard deviation, and calculated the statistical Z-Test value. The labels used on the results of our summarized results tables are the following:
+
+    \begin{itemize}
+        \item   Fx:          is the mathematical benchmark function.
+        \item   Mean:        is the best-found error average.
+        \item   St-Dev:      is the standard deviation calculated from the error. 
+        \item   Z:           is the calculated statistical Z-Test value.
+    \end{itemize}
+
+    To find and determine the best alternative finalized with a statistical Z-Test with a 95 percent confidence level. Here are the results statistics values: Table 3 shows the condensed ALCA evaluation results for the CEC-2017 functions running on ten dimensions (D) for alternatives One Point and Continuous Range crossover; Table 4 displays the condensed ALCA evaluation results for the CEC-2017 mathematical operations running on thirty D for the same crossover alternatives.
+    
+    We performed the statistical Z-Test for both crossover alternatives with a 95 percent confidence level. When the One Point passes the test, it is highlighted in green color. When the Continuous Range passes the statistical test, it is highlighted in blue. Where we did not find enough evidence to declare one choice as the best alternative, no Z value was highlighted.
+
+
+    \FloatBarrier
+
+
+    STOP HERE --- A new beginning (this is an upload test).    
+
+
+
 
     Imagine being an astronaut on a mission repairing a space station in the
     middle of space. Suddenly, a block of asteroids hits the craft, and you
