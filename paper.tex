@@ -95,6 +95,8 @@
 
     We propose a new reproduction alternative in this research: a new breeding crossover approach for evolutionary algorithms using the classic one-point crossover as a reference to our proposal. We performed comparison experiments using the mathematical benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC-2017) for evaluation. We finalize with a statistical Z-Test with a ninety-five percent confidence level to determine the best alternative.
 
+    One of the most important contributions of this research is that it proposes a new crossing alternative for the reproduction of individuals in a population. This strategy is practical in evolutionary algorithms where the individual's information has a structure similar to the genetic code's. With some tinkering, this strategy could be valuable in other algorithms\cite{venter2003particle,wang2018particle}, such as Particle Swarm Optimization (PSO).
+
     We organized this paper in the following structure. First, we illustrate our alternative crossover proposal, from the inspiration to a detailed example. The proposal section~\ref{section.proposal} compares the canonical one-point crossover with our crossover solution. We continue with the experiments section~\ref{section.experiments} with our experiment configuration and results. We include the analysis and description of some of our research discoveries in the discussion section~\ref{section.discussion}. The conclusions section~\ref{section.conclusions} finalizes presenting some deductions founded on the study of our experiments.
 
 
@@ -120,11 +122,11 @@
 
     \subsection{Crossover Proposal}
 
-    In this document, we propose a different technique to the canonical approach One Point Crossover, where part of the genetic information is copied directly to each of the offspring in the crossover operator, where this type of crossover may perform inadequately in continuous optimization problems. Figure~\ref{fig.onepoint_crossover} provides an example of the One Point Crossover.
+    In this document, we propose a different technique to the canonical approach One Point Crossover, where part of the genetic information is copied directly to each offspring in the crossover operator. This type of crossover may fail to perform successfully in continuous optimization problems. Figure~\ref{fig.onepoint_crossover} provides an example of the One Point Crossover.
 
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.70\linewidth]{img/fig_onepoint_crossover.pdf}
+        \includegraphics[width=0.50\linewidth]{img/fig_onepoint_crossover.pdf}
         \caption{Classical approach example for the One Point Crossover, with crossover point 3.} \label{fig.onepoint_crossover}
         \end{figure}
 
@@ -132,7 +134,7 @@
 
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.70\linewidth]{img/fig_contrange_crossover.pdf}
+        \includegraphics[width=0.50\linewidth]{img/fig_contrange_crossover.pdf}
         \caption{Our proposal example for the Continuous Range Crossover mating the same couple of individuals.} \label{fig.contrange_crossover}
         \end{figure}        
     
@@ -620,13 +622,15 @@
 \section{Conclusions}
     \label{section.conclusions}
 
-    To validate our research, we performed the statistical Z-Test with a ninety-five percent confidence level to analyze the alternatives we present in this proposal. In the ten-dimension category, we found that One Point crossover was the better alternative on four occasions, while our Continuous Range proposal was better on twelve other functions out of thirty. For the thirty-dimensions category, the One Point crossover was better on five occasions, while the Continuous Range crossover was the best alternative on another thirteen. Our experiment results confirm that our solution can be considered a adequate alternative.
+    To validate our research, we performed the statistical Z-Test with a ninety-five percent confidence level to analyze the alternatives we present in this proposal. In the ten-dimension category, we found that One Point crossover was the better alternative on four occasions, while our Continuous Range proposal was better on twelve other functions out of thirty. For the thirty-dimensions category, the One Point crossover was better on five occasions, while the Continuous Range crossover was the best alternative on another thirteen. Our experiment results confirm that our solution can be considered an adequate alternative.
 
     Some researchers might consider our proposal similar to what is used by algorithms such as Differential Evolution, where we consider our proposal to be a variation of existing proposals because we expect this new operator to allow the offspring to continue exploring new search spaces with the birth of individuals. Experimental results indicate that our proposed operator may be a viable alternative for the canonical One Point crossover.
 
+    Based on the analysis of our results, we have shown that the proposed crossover alternative for the reproduction of individuals in a population obtains good results. Therefore, it can be valuable in other evolutionary algorithms where the information of individuals has a structure similar to that of the genetic code. However, with some adaptation, it could be helpful in different types of algorithms, such as Particle Swarm Optimization. In future work, we could investigate a combination between the canonical One Point Crossover strategy and randomly alternating with the proposed Continuous Range Crossover.
+
 
 \begin{acknowledgement}
-    This paper has been supported in part by TecNM Project 15340.22-P.
+    This paper has been supported in part by TecNM Project 18186.23-P.
 \end{acknowledgement}
 
 % ---- Bibliography ----
