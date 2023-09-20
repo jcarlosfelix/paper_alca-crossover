@@ -91,7 +91,7 @@
     
     The algorithm's main objective is to abstract how the animal life cycle performs in nature, where at any given time, newborn individuals are integrated into the population and partake in communal evolution. Progressively, all individuals grow and mature, consequently suffering changes that we represent with mutations in our design. In our modeling, we enforced the survival of the fittest. As in nature, death randomly tests every living organism to help maintain balance in the numbers in the population; therefore, it is independent of the individual's age. However, fitness will be the main factor in prolonging its longevity.
 
-    One essential feature to highlight in the algorithm is that it doesn't use the concept of generations in the evolution. Our strategy views the population as a set of candidate solutions that evolve continuously over time, which allows individuals of multiple ages to reproduce and generate new offspring, reflecting nature's actual behavior. Another difference to highlight in our algorithm is that both reproduction (crossover) and growth (mutation) execute through independent processes that randomly affect the population. Figure~\ref{fig.algorithm_model} displays the general model concept for the Animal Life Cycle Algorithm (ALCA).
+    One essential feature to highlight in the algorithm is that it doesn't use the concept of generations in the evolution. Our strategy views the population as a set of candidate solutions that evolve continuously over time, which allows individuals of multiple ages to reproduce and generate new offspring, reflecting nature's actual behavior. Another difference to highlight in our algorithm is that both reproduction (crossover) and growth (mutation) execute through independent processes that randomly affect the population. Figure~\ref{fig.algorithm_model} displays the general model concept for the Animal Life Cycle Algorithm (ALCA)\cite{Felix-Saul2023}.
 
     We propose a new reproduction alternative in this research: a new breeding crossover approach for evolutionary algorithms using the classic one-point crossover as a reference to our proposal. We performed comparison experiments using the mathematical benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC-2017) for evaluation. We finalize with a statistical Z-Test with a ninety-five percent confidence level to determine the best alternative.
 
@@ -103,7 +103,7 @@
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=0.90\linewidth]{img/fig_algorithm_model.pdf}
-        \caption{Animal Life Cycle Algorithm model.} \label{fig.algorithm_model}
+        \caption{Animal Life Cycle Algorithm model\cite{Felix-Saul2023}.} \label{fig.algorithm_model}
         \end{figure}
 
 
@@ -114,7 +114,7 @@
 
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.70\linewidth]{img/fig_grayscale_continuous.pdf}
+        \includegraphics[width=0.90\linewidth]{img/fig_grayscale_continuous.pdf}
         \caption{Black and white offspring, predictable color domain.} \label{fig.grayscale_continuous}
         \end{figure}
 
@@ -126,7 +126,7 @@
 
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.50\linewidth]{img/fig_onepoint_crossover.pdf}
+        \includegraphics[width=0.90\linewidth]{img/fig_onepoint_crossover.pdf}
         \caption{Classical approach example for the One Point Crossover, with crossover point 3.} \label{fig.onepoint_crossover}
         \end{figure}
 
@@ -134,7 +134,7 @@
 
     \begin{figure}[!ht]
         \centering
-        \includegraphics[width=0.50\linewidth]{img/fig_contrange_crossover.pdf}
+        \includegraphics[width=0.90\linewidth]{img/fig_contrange_crossover.pdf}
         \caption{Our proposal example for the Continuous Range Crossover mating the same couple of individuals.} \label{fig.contrange_crossover}
         \end{figure}        
     
@@ -630,7 +630,7 @@
 
 
 \begin{acknowledgement}
-    This paper has been supported in part by TecNM Project 18186.23-P.
+    TecNM Project 18186.23-P has partially funded this research.
 \end{acknowledgement}
 
 % ---- Bibliography ----
