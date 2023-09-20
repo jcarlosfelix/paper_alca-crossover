@@ -91,7 +91,7 @@
     
     The algorithm's main objective is to abstract how the animal life cycle performs in nature, where at any given time, newborn individuals are integrated into the population and partake in communal evolution. Progressively, all individuals grow and mature, consequently suffering changes that we represent with mutations in our design. In our modeling, we enforced the survival of the fittest. As in nature, death randomly tests every living organism to help maintain balance in the numbers in the population; therefore, it is independent of the individual's age. However, fitness will be the main factor in prolonging its longevity.
 
-    One essential feature to highlight in the algorithm is that it doesn't use the concept of generations in the evolution. Our strategy views the population as a set of candidate solutions that evolve continuously over time, which allows individuals of multiple ages to reproduce and generate new offspring, reflecting nature's actual behavior. Another difference to highlight in our algorithm is that both reproduction (crossover) and growth (mutation) execute through independent processes that randomly affect the population. Figure~\ref{fig.algorithm_model} displays the general model concept for the Animal Life Cycle Algorithm (ALCA)\cite{Felix-Saul2023}.
+    One essential feature to highlight in the algorithm is that it doesn't use the concept of generations in the evolution. Our strategy views the population as a set of candidate solutions that evolve continuously over time, which allows individuals of multiple ages to reproduce and generate new offspring, reflecting nature's actual behavior. Another difference to highlight in our algorithm is that both reproduction (crossover) and growth (mutation) execute through autonomous processes that interact with the population randomly. Figure~\ref{fig.algorithm_model} displays the general model concept for the Animal Life Cycle Algorithm (ALCA)\cite{Felix-Saul2023}.
 
     We propose a new reproduction alternative in this research: a new breeding crossover approach for evolutionary algorithms using the classic one-point crossover as a reference to our proposal. We performed comparison experiments using the mathematical benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC-2017) for evaluation. We finalize with a statistical Z-Test with a ninety-five percent confidence level to determine the best alternative.
 
@@ -211,7 +211,6 @@
             \includegraphics[width=1\linewidth]{img/fig_experiment_F1x10D.pdf} 
         \end{minipage}
         \hfill
-        \vspace{0.05 cm}
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F1x30D.pdf} 
         \end{minipage}
@@ -224,18 +223,12 @@
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F2x30D.pdf} 
         \end{minipage}
-        
-        \caption{Box and Whisker charts for mathematical functions F1 and F2. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F1-F2}
-    \end{figure}
-
-    \FloatBarrier
-
-    \begin{figure}[!ht]
+        \vfill
+        \vspace{0.05 cm}
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F3x10D.pdf} 
         \end{minipage}
         \hfill
-        \vspace{0.05 cm}
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F3x30D.pdf} 
         \end{minipage}
@@ -256,16 +249,21 @@
         \hfill
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F5x30D.pdf} 
-        \end{minipage}
-        \vfill
-        \vspace{0.05 cm}
+        \end{minipage}       
+        
+        \caption{Box and Whisker charts for mathematical functions F1 to F5. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F1-F5}
+    \end{figure}
+
+    \FloatBarrier
+
+    \begin{figure}[!ht]
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F6x10D.pdf} 
         \end{minipage}
         \hfill
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F6x30D.pdf} 
-        \end{minipage}
+        \end{minipage} 
         \vfill
         \vspace{0.05 cm}
         \begin{minipage}[h]{0.49\linewidth}
@@ -284,13 +282,8 @@
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F8x30D.pdf} 
         \end{minipage}
-
-        \caption{Box and Whisker charts for mathematical functions F3 to F8. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F3-F8}
-    \end{figure}
-
-    \FloatBarrier
-
-    \begin{figure}[!ht]
+        \vfill
+        \vspace{0.05 cm}
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F9x10D.pdf} 
         \end{minipage}
@@ -308,8 +301,13 @@
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F10x30D.pdf} 
         \end{minipage}
-        \vfill
-        \vspace{0.05 cm}
+        
+        \caption{Box and Whisker charts for mathematical functions F6 to F10. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F6-F10}
+    \end{figure}
+
+    \FloatBarrier
+
+    \begin{figure}[!ht]
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F11x10D.pdf} 
         \end{minipage}
@@ -327,7 +325,7 @@
             \includegraphics[width=1\linewidth]{img/fig_experiment_F12x30D.pdf} 
         \end{minipage}
         \vfill
-        \vspace{0.05 cm}
+        \vspace{0.05 cm}    
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F13x10D.pdf} 
         \end{minipage}
@@ -344,13 +342,8 @@
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F14x30D.pdf} 
         \end{minipage}
-
-        \caption{Box and Whisker charts for mathematical functions F9 to F14. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F9-F14}
-    \end{figure}
-
-    \FloatBarrier
-
-    \begin{figure}[!ht]
+        \vfill
+        \vspace{0.05 cm}
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F15x10D.pdf} 
         \end{minipage}
@@ -359,8 +352,13 @@
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F15x30D.pdf} 
         \end{minipage}
-        \vfill
-        \vspace{0.05 cm}
+
+        \caption{Box and Whisker charts for mathematical functions F11 to F15. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F11-F15}
+    \end{figure}
+
+    \FloatBarrier
+
+    \begin{figure}[!ht]
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F16x10D.pdf} 
         \end{minipage}
@@ -387,7 +385,7 @@
             \includegraphics[width=1\linewidth]{img/fig_experiment_F18x30D.pdf} 
         \end{minipage}
         \vfill
-        \vspace{0.05 cm}
+        \vspace{0.05 cm}    
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F19x10D.pdf} 
         \end{minipage}
@@ -404,8 +402,8 @@
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F20x30D.pdf} 
         \end{minipage}
-
-        \caption{Box and Whisker charts for mathematical functions F15 to F20. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F15-F20}
+        
+        \caption{Box and Whisker charts for mathematical functions F16 to F20. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F16-F20}
     \end{figure}
 
     \FloatBarrier
@@ -447,7 +445,7 @@
             \includegraphics[width=1\linewidth]{img/fig_experiment_F24x30D.pdf} 
         \end{minipage}
         \vfill
-        \vspace{0.05 cm}
+        \vspace{0.05 cm}        
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F25x10D.pdf} 
         \end{minipage}
@@ -455,8 +453,13 @@
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F25x30D.pdf} 
         \end{minipage}
-        \vfill
-        \vspace{0.05 cm}
+        
+        \caption{Box and Whisker charts for mathematical functions F21 to F25. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F21-F25}
+    \end{figure}
+
+    \FloatBarrier
+
+    \begin{figure}[!ht]
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F26x10D.pdf} 
         \end{minipage}
@@ -464,13 +467,8 @@
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F26x30D.pdf} 
         \end{minipage}
-
-        \caption{Box and Whisker charts for mathematical functions F21 to F26. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F21-F26}
-    \end{figure}
-
-    \FloatBarrier
-
-    \begin{figure}[!ht]
+        \vfill
+        \vspace{0.05 cm}
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F27x10D.pdf} 
         \end{minipage}
@@ -505,9 +503,9 @@
         \hfill
         \begin{minipage}[h]{0.49\linewidth}
             \includegraphics[width=1\linewidth]{img/fig_experiment_F30x30D.pdf} 
-        \end{minipage}
+        \end{minipage}        
 
-        \caption{Box and Whisker charts for mathematical functions F27 to F30. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F27-F30}
+        \caption{Box and Whisker charts for mathematical functions F26 to F30. We display the ten and thirty-dimension charts on the left and right sides for the results accumulated in 51 runs.} \label{fig.experiment_F26-F30}
     \end{figure}
 
     \FloatBarrier
