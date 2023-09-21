@@ -149,7 +149,7 @@
 \section{Experiments}
     \label{section.experiments}
 
-    To validate our proposal, we performed experiments using the mathematical benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC-2017) for evaluation to compare the traditional one-point crossover and our proposed strategy. We finalize with a statistical Z-Test with a ninety-five percent confidence level to determine the best alternative. Table~\ref{tab.benchmark_functions} lists the thirty mathematical benchmark functions used for evaluation, to obtain the comparison results shown in our research.
+    To validate our proposal, we performed experiments using the mathematical benchmark functions introduced in the Competition on Evolutionary Computation for the 2017 edition (CEC-2017) for evaluation to compare the traditional one-point crossover and our proposed strategy. We finalize with a statistical Z-Test with a ninety-five percent confidence level to determine the best alternative. These benchmark functions include shifted and rotated versions of traditional benchmark functions (F1-F10), furthermore, there are ten hybrid versions combining the previous functions (F11-F20). The last functions (F21-30) include several compositions of previous benchmark functions, these are the most difficult variants. 
 
     \begin{table}[]
     \scriptsize
@@ -209,18 +209,9 @@
 
     \subsection{Experimental Results}
 
-    We describe how to interpret the results presented in our Box and Whisker charts for each mathematical function. We display the ten and thirty-dimension charts on the left and right sides. We can find the results accumulated in 51 runs, in green color the One Point crossover, and in blue color the Continuous Range crossover. The closer the error results get to the zero value, the better. Below, we describe Figure~\ref{fig.experiment_F1-F5}, which includes Functions 1 to 5 (F1 to F5).
-
-    \begin{itemize}
-        \item In function F1 for the ten-dimensional category, the Continuous Range Crossover (CRx) methodology outperformed the One Point Crossover (OPx) methodology in the statistical test. We needed to find more evidence for the thirty dimensions category to determine whether any crossover alternative would be better.
-        \item At function F2 for the category of 10 dimensions, again, the CRx strategy outperformed the alternative approach OPx in the statistical test. More evidence was required for the thirty dimensions category to declare any of them as the best.
-        \item At function F3 for both categories, 10 and 30 dimensions, the statistical test found better results for our proposed CRx strategy than the alternative OPx.
-        \item At function F4, only for the 10-dimensional category, the CRx strategy proved to be better through the statistical test, while for the 30-dimensional variety, it could not identify any of them as the best.
-        \item At function F5, only for the 10-dimensional category, the proposed strategy CRx passed the statistical test compared to its alternative OPx, while for the 30-dimensional type, they obtained similar results.
-    \end{itemize}
-
-
-    We describe the results shown in Figure~\ref{fig.experiment_F6-F10}, including functions F6 through F10.
+    We describe how to interpret the results presented in our Box and Whisker charts for each mathematical function. For these experiments, we choose to test the benchmark functions with ten and thirty dimensions, while there are higher dimensions, these two present enough challenges to the algorithms to compare the search performance in this kind of problem. According to the rules of the CEC 2017 Benchmark, the number of runs must be 51. The results in the table are then the box plot showing the median of the 51 runs. In green color, we show the results of the canonical One Point crossover found in the original version of GAs, on the right side, in blue color we show the results of our current proposal, the Continuous Range crossover. Because the goal is to minimize the functions, the closer the error values are to the zero value, the better. Below, we describe Figure~\ref{fig.experiment_F1-F5}, which includes Functions 1 to 5 (F1 to F5).  In function F1 for the 10-dimension difficulty, the Continuous Range Crossover (CRx) methodology outperformed the One Point Crossover (OPx) methodology in the statistical test. On the other hand, we needed to find more evidence for thirty dimensions to determine whether any crossover alternative would be better. In the F2 function, for 10 dimensions, again, our proposed approach outperformed the OPx. Moreover, for function F3 for both dimensions, the statistical test found better results for our proposed CRx strategy. At function F4, only for the 10-dimensional problem, the CRx strategy turned out to be better through the statistical test, while for 30 dimensions, there was not a statistically clear winner. Finally, for F5, the statistical test passed only in 10 dimensions.
+   
+    We now describe the results for the next set of functions shown in Figure~\ref{fig.experiment_F6-F10}, including functions F6 through F10.
 
     \begin{itemize}
         \item In function F6, for the category of 10 dimensions, there needed to be more evidence to determine that any of the proposals were best. For the variety of 30, the OPx alternative surpassed our CRx proposal in the statistical test for the first occasion.
